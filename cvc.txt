@@ -1,0 +1,12 @@
+Private key: dd13f6be0b483f3607954c33276e2ae9e09ac8daf1b079f1187c61813a8b02e2
+
+Public key: 04acd35827c56720dfd806c9fc7337fbfdcfcd105dd1bc6693d26a11c424610a04074b4f708679e0c5a21619d72f1087d373f74b85acc0cfb2c89a28f387a3482a
+
+console.log('Is chain valid?', DICEcoin.isChainValid());
+
+//add this on 19th line of DICE.js and it will work like a charm, to tell if chain is valid or not
+
+DICEcoin.chain[1].transactions[0].amount = 1;
+
+//this states that I sent 1 coin instead of 10, which is for sure false, so when I verify it with above code, (make sure its written on a line above the verification code,,, it should state that my chain is false :)))
+cus signature won't matchup with pvt key... and public key etc..
